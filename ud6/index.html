@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo BOM</title>
+</head>
+<body>
+    
+</body>
+<script>
+    document.write("<h1>Título de la página desde JS</h1>");
+    window.document.write("<p>el objeto window se puede omitir</p>");
+    //let nuevaVentana=window.open("http://www.centrosanluis.com");
+    //nuevaVentana.focus();
+    let respuesta = confirm("¿Lo elimino fijo?");
+    if (respuesta) //respuesta ==true
+        alert("A LA PAPELERA!");
+    else// (!respuesta) igual a respuesta==false
+        alert("Operación cancelada");
+        
+</script>
+</html>
