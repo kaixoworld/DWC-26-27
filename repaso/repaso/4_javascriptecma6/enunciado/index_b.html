@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Individual Js</title>
+    <style>
+        html {font-family: "helvetica neue", helvetica, arial, sans-serif;}
+        th {letter-spacing: 2px;}
+        td {letter-spacing: 1px;}
+        tbody td {text-align: center;}
+        tfoot th {text-align: right;}
+        tbody tr:nth-child(odd) {background-color: #aaa;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Prueba Individual Javascript</h1>
+        <h2>¿ Me demuestras lo que sabes ?</h2>
+    </header>    
+    <main>
+        <button onclick="empezar()">Empezar</button>
+        <section id="test">
+        
+        <p>1.- ¿Qué sabe hacer un desarrollador front? </p>
+        <label><input type="radio" name="respuPreg1" value="Ambos"/>Ambos</label> <br>
+        <label><input type="radio" name="respuPreg1" value="Solo Front-end"/>Solo Front-end</label> <br>
+        <label><input type="radio" name="respuPreg1" value="Solo Back-end"/>Solo Back-end</label> <br>
+        <label><input type="radio" name="respuPreg1" value="Ninguno"/>Ninguno</label> <br>
+        
+        <p>2.- ¿Qué lenguaje sirve para hacer front?</p>
+        <label><input type="radio" name="respuPreg2" value="PHP"/>PHP</label> <br>
+        <label><input type="radio" name="respuPreg2" value="CSS3"/>CSS3</label> <br>
+        <label><input type="radio" name="respuPreg2" value="Javascript"/>Javascript</label> <br>
+        <label><input type="radio" name="respuPreg2" value="HTML5"/>HTML5</label> <br>
+        
+        <p>3.- ¿Qué lenguaje es interpretado por el navegador?</p>
+        <label><input type="radio" name="respuPreg3" value="Javascript"/>Javascript</label> <br>
+        <label><input type="radio" name="respuPreg3" value="Java"/>Java</label> <br>
+        <label><input type="radio" name="respuPreg3" value="Cobol"/>Cobol</label> <br>
+        <label><input type="radio" name="respuPreg3" value="PHP"/>PHP</label> <br>
+        
+        <p>4.- ¿Qué lenguaje es interpretado por el navegador?</p>
+        <label><input type="radio" name="respuPreg4" value="Good Code"/>Good Code</label> <br>
+        <label><input type="radio" name="respuPreg4" value="Clean Code"/>Clean Code</label> <br>
+        <label><input type="radio" name="respuPreg4" value="Top Code"/>Top Code</label> <br>
+        <label><input type="radio" name="respuPreg4" value="Easy Code"/>Easy Code</label> <br>
+        
+        <p>5.- ¿Por qué nombre se conoce el último estándar de Javascript?</p>
+        <label><input type="radio" name="respuPreg5" value="ES6"/>ES6</label> <br>
+        <label><input type="radio" name="respuPreg5" value="ES2015"/>ES2015</label> <br>
+        <label><input type="radio" name="respuPreg5" value="Ni ES6 ni ES2015"/>Ni ES6 ni ES2015</label> <br>
+        <label><input type="radio" name="respuPreg5" value="ES6, ES2015"/>ES6, ES2015</label> <br>
+       </section>
+    </main>    
+    <footer>
+        <section>
+            <button onclick="comprobar()">Comprobar</button>
+            <!--RESPUESTAS SOLUCIÓN:
+                1.Solo Front-end
+                2.Javascript
+                3.Javascript
+                4.Clean Code
+                5.ES6, ES2015-->
+            <button onclick="reintentar()">Volver a intentarlo</button>
+            <button onclick="rendirse()">Rendirse</button>
+        </section>
+
+        <table>
+        
+            <thead>
+            <tr>
+                <th scope="col">Intento</th>
+                <th scope="col">Resultado</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--ESTE CÓDIGO HTML TENDRÁS QUE INSERTARLO DESDE JS CADA VEZ QUE LA PERSONA USUARIA REALICE UN TEST-->
+            <!--
+            <tr>
+                <td>aqui escribirás el número de intento</td>
+                <td>aqui escribirás el resultado</td>
+            </tr>
+            -->
+            </tbody>
+            <tfoot>
+            <tr>
+                <th scope="row" colspan="2">Mejor resultado</th>
+                <td colspan="2"></td>
+            </tr>
+            </tfoot>
+        </table>
+     </footer>
+</body>
+<script src="js/ejercicio4b.js"></script>
+</html>
